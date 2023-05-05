@@ -1,0 +1,378 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #183544;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #0068b5;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#myCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Set to -1 to ensure the canvas is behind other elements */
+}
+
+.navbar {
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background: white;
+  margin-left: auto;
+  border-bottom: 1px solid black;
+  width: 100%;
+  height: 4.4rem;
+  z-index: 5;
+
+}
+
+.navbar-logo {
+  justify-content: flex-start;
+
+}
+
+.navbar-links-left {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  align-items: center; /* add this property */
+  width: auto;
+
+}
+
+.navbar-link {
+  margin-right: 2rem;
+  color: #0068b5;
+  font-size: 16px;
+  align-items: center;
+  text-decoration: none;
+}
+
+
+
+.navbar-links-end {
+
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  align-items: center;
+  margin-left: auto;
+  width: auto;
+  height: 100%; /* updated */
+  margin-top: auto;
+
+
+}
+
+input[name="input-test"] {
+  border: none; /* Remove the border */
+  background: whitesmoke;
+  color: black;
+  outline: none;
+}
+
+.search-div {
+  padding-left: 1rem;
+  padding-right: auto;
+  display: flex;
+  background: whitesmoke;
+  align-items: center;
+  height: 100%;
+
+
+}
+
+.container-hero {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  background: #41728a;
+  top: 0;
+  left: 0;
+  margin-top: 9.8rem;
+  height: 16rem;
+  display: flex;
+  flex-direction: row;
+  position:relative;
+  z-index: 1 !important;
+}
+
+.container-content-1 {
+    flex: 1;
+    height: 100%;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: lighter;
+}
+
+.container-content-2 {
+    flex: 1;
+    height: 100%;
+    position: relative;
+    padding-left: 6rem;
+    margin-right: -6rem;
+    padding-top: 8rem;
+    margin-top: -5rem;
+    background-image: url('images/male-working.jpg');
+    background-size: cover;
+
+}
+
+.learn-more-button {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #0068b5;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+.container-features {
+  color:black;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 3rem;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1rem;
+  margin-right: 8rem;
+}
+
+.feature i {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #0068b5;
+}
+
+
+
+.container-articles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1600px;
+  height: 70rem;
+  margin: 0 auto; /* add this line */
+  padding-bottom: 20rem;
+}
+
+.column-start {
+  background: blue;
+  width: 30%;
+  height: 100vh;
+  border-right: white 1.4rem solid;
+}
+
+.column-middle {
+  background: yellow;
+  width: 40%;
+  height: 100vh;
+  
+}
+
+.column-end {
+  background: seagreen;
+  width: 30%;
+  height: 100vh;
+  border-left: white 1.4rem solid;
+}
+
+.column-article {
+  height:50%;
+  border-bottom: white 0.7rem solid;
+  border-top: white 0.7rem solid;
+  background: whitesmoke !important;
+  padding-bottom: 2.5rem;
+}
+
+.zoom-in-background {
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+.zoom-in-background:hover {
+  transform: scale(1.05);
+}
+
+#column-image-1 {
+  background-image: url("images/pc.jpg");
+  height: 70%;
+  background-size: cover;
+}
+
+
+#column-image-2 {
+  background-image: url("images/city.jpg");
+  height: 70%;
+  background-size: cover;
+}
+
+#column-image-3 {
+  background-image: url("images/lines.jpg");
+  height: 80%;
+  background-size: cover;
+}
+
+#column-image-4 {
+  background-image: url("images/vision.png");
+  height: 70%;
+  background-size: cover;
+}
+
+#column-image-5 {
+  background-image: url("images/agilex.jpg");
+  height: 70%;
+  background-size: cover;
+}
+/* This is for middle column */
+#column-image-6 {
+  background-image: url("images/tablet.jpg");
+  border-left: 1rem solid #f3f3f3;
+  border-right: 1rem solid #f3f3f3;
+  background-size: cover;
+}
+
+#column-image-7 {
+  background-image: url("images/server.jpg");
+  border-left: 1rem solid #f3f3f3;
+  border-right: 1rem solid #f3f3f3;
+  background-size: cover;
+}
+
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+  height: 23rem;
+}
+
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+}
+
+.footer-logo img {
+  height: 6rem;
+  width: 6rem;
+  margin-left: 10rem;
+}
+
+.footer-content {
+  width: 70%;
+  height: 100%;
+  flex: 1;
+  text-align: right;
+}
+
+.footer-content p {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer-links {
+  justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 2.5rem;
+  color: black;
+
+}
+
+
+.footer-links a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+
+}
+
+
+.footer-content div a {
+  text-decoration: none;
+  color: black;
+
+  margin-left: 1rem;
+
+}
+
+
+.footer-icons {
+  justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 2rem;
+  margin-left: 1rem;
+
+}
+
+.footer-icons i {
+  font-size: 24px;
+  padding-right: 2.5rem;
+}
+
+
+.footer-links-2 {
+  justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 2.5rem;
+  color: black;
+  font-size: 0.8rem;
+
+}
+
+
+.footer-links-2 a {
+  margin-right: 8px;
+  text-decoration: none;
+  color: black;
+  
+}
+
+.footer-paragraph {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 0.8rem;
+  text-align: left;
+}
